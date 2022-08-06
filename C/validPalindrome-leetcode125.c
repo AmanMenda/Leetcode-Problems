@@ -1,7 +1,8 @@
 
 #include <stdbool.h>
 
-bool isPalindrome(char *s){
+bool isPalindrome(char *s)
+{
     int head, tail = strlen(s) - 1;
     
     while (head < tail) {

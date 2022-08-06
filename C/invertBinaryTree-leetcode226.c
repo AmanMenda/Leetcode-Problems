@@ -9,7 +9,8 @@ struct TreeNode {
 };
 
 // First method
-struct TreeNode* invertTree(struct TreeNode* root){
+struct TreeNode* invertTree(struct TreeNode* root)
+{
     if (root == NULL)
         return NULL;
     struct TreeNode *tmp = root->left;
@@ -22,7 +23,8 @@ struct TreeNode* invertTree(struct TreeNode* root){
 }
 
 // Second method
-struct TreeNode* invertTree(struct TreeNode* root){
+struct TreeNode* invertTree(struct TreeNode* root)
+{
     if (root == NULL)
         return NULL;
     struct TreeNode *tmp = root->left;

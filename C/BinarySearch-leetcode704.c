@@ -1,4 +1,5 @@
-int search(int* nums, int numsSize, int target){
+int search(int* nums, int numsSize, int target)
+{
     int l = 0;
     int r = numsSize - 1;
     int m = 0;

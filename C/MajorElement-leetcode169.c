@@ -1,6 +1,7 @@
 
 //Bayor-Moore voting algorithm
-int majorityElement(int* nums, int numsSize){
+int majorityElement(int* nums, int numsSize)
+{
     int count = 0;
     int res = 0;
     

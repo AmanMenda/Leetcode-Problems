@@ -1,4 +1,5 @@
-int* sortedSquares(int* nums, int numsSize, int* returnSize){
+int* sortedSquares(int* nums, int numsSize, int* returnSize)
+{
     int* arr = malloc(sizeof(int)*numsSize);
     *returnSize = numsSize;
     int r = numsSize-1, l = 0;

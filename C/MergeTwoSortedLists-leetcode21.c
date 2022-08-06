@@ -6,7 +6,8 @@ struct ListNode {
     struct ListNode *next;
 };  
 
-struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2){
+struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2)
+{
     struct ListNode head;
     struct ListNode *h = &head;
     
