@@ -9,24 +9,24 @@ struct ListNode {
 struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2)
 {
     struct ListNode head;
-    struct ListNode *h = &head;
+    struct ListNode *ptr = &head; //head store the beginning of the list
     
     if (!l1) return l2;
     if (!l2) return l1;
-    
+
     while (l1 != NULL && l2 != NULL) {
         if (l1->val > l2->val) {
-            h->next = l2;
+            ptr->next = l2;
             l2 = l2->next;
         } else {
-            h->next = l1;
+            ptr->next = l1;
             l1 = l1->next;
         }
-        h = h->next;
+        ptr = ptr->next;
     }
     if (l1)
-        h->next = l1;
+        ptr->next = l1;
     else
-        h->next = l2;
+        ptr->next = l2;
     return head.next;
 }
